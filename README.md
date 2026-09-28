@@ -1,5 +1,7 @@
 # README
 
+[![CI](https://github.com/ben-dickinson01/ode-solvers-ts/actions/workflows/ci.yml/badge.svg)](https://github.com/ben-dickinson01/ode-solvers-ts/actions/workflows/ci.yml)
+
 ODE solvers written in TypeScript. This is my first project in TypeScript, so it doubles as a
 way to learn the language and its tooling.
 
