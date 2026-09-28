@@ -1,0 +1,36 @@
+{
+    "name": "ode-solvers-ts",
+    "version": "1.0.0",
+    "description": "Numerical ODE solvers (Euler, RK4) in TypeScript",
+    "main": "dist/solvers.js",
+    "type": "module",
+    "scripts": {
+        "typecheck": "tsgo --noEmit",
+        "build": "tsc",
+        "dev": "tsx watch src/demo.ts",
+        "start": "node dist/demo.js",
+        "test": "vitest",
+        "format": "prettier --write .",
+        "format:check": "prettier --check .",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "check": "npm run typecheck && npm run lint && npm run format:check && npm run test:run",
+        "typecheck:tsc": "tsc --noEmit",
+        "test:run": "vitest run",
+        "pretest:run": "eslint ."
+    },
+    "keywords": [],
+    "author": "Ben Dickinson",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^26.6.3",
+        "@typescript/native-preview": "^7.0.0-dev.20260707.2",
+        "eslint": "^10.11.0",
+        "eslint-config-prettier": "^10.1.8",
+        "prettier": "^3.9.9",
+        "tsx": "^4.23.15",
+        "typescript": "^6.0.3",
+        "typescript-eslint": "^8.70.1",
+        "vitest": "^5.0.2"
+    }
+}
