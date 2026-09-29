@@ -1,7 +1,6 @@
-import { eulerSolver, rk4Solver, addVect, scaleVect, norm2 } from "./solvers.js";
+import { eulerSolver, rk4Solver } from "./solvers.js";
 import type { DerivVec } from "./solvers.js";
-
-/** Squared Euclidean norm — avoids indexing into a possibly-short vector. */
+import { addVect, scaleVect, norm2 } from "./vector-methods.js";
 
 console.log(addVect([1, 2], [3, 4])); // [ 4, 6 ]
 console.log(scaleVect(2, [1, 2, 3])); // [ 2, 4, 6 ]

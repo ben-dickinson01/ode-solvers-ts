@@ -1,6 +1,7 @@
 import { describe, it, expect } from "vitest";
-import { eulerSolver, rk4Solver, addVect, norm2 } from "./solvers.js";
+import { eulerSolver, rk4Solver } from "./solvers.js";
 import type { DerivVec, Solver } from "./solvers.js";
+import { addVect, norm2 } from "./vector-methods.js";
 
 const decay: DerivVec = (_t, y) => [-2 * (y[0] ?? 0)];
 const exact = Math.exp(-2);
