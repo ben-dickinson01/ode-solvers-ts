@@ -12,7 +12,7 @@ export default defineConfig(
             parserOptions: {
                 projectService: {
                     // eslint.config.js lives outside tsconfig's `include: ["src"]`
-                    allowDefaultProject: ["eslint.config.js"],
+                    allowDefaultProject: ["eslint.config.js", "vitest.config.ts"],
                 },
                 tsconfigRootDir: import.meta.dirname,
             },
