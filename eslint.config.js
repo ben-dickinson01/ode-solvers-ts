@@ -18,6 +18,12 @@ export default defineConfig(
             },
         },
     },
+    {
+        rules: {
+            // numbers in template literals are fine; the rule exists to catch objects
+            "@typescript-eslint/restrict-template-expressions": ["error", { allowNumber: true }],
+        },
+    },
     // eslint-config-prettier must come last: it disables rules that fight Prettier
     prettier,
 );
